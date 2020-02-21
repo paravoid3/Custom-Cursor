@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap');
+
+
+* {
+  transition: .2s ease;
+}
+
+body {
+  cursor: none;
+  overflow: hidden;
+  background: #5f2c82;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #49a09d, #5f2c82);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.nav .nav-item {
+  /* border: 2px solid rgba(0, 0, 0, 0.3); */
+  /* border-radius: 30px; */
+  margin: 0 2%;
+}
+
+.nav .nav-link {
+  padding: 25px 25px;
+  font-size: 18px;
+  color: #fff;
+  cursor: none;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #111;
+}
+
+.nav .nav-link:hover {
+  color: #C2EC7D;
+  font-weight: 500;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid #333;
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease-in;
+  pointer-events: none;
+  transform-origin: 100% 100%;
+}
+
+.animate {
+  transform: scale(3.3);
+  background: #333;
+  /* border: none; */
+  z-index: -1;
+}
+
+
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+} */
